@@ -1,0 +1,187 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #8F8F8F;
+  font-size: .75rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Download button */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #FF4C68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title section */
+/* Combining selectors. For title section container-fluid class will have the following padding */
+/* Hierarchical selector */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-image {
+  width: 60%;
+  /* Rotation a image using CSS function rotate. */
+  /* Positive value means rotate clockwise and negative value means rotate anti-clockwise */
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+.title-image-div {
+  /* Making div postion to relative so that image can be positioned relaitve to the div not to the body */
+  position: relative;
+}
+
+/* Feature section */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-icon {
+  color: #EF8172;
+  font-size: 3rem;
+  padding: 5%
+}
+
+.feature-icon:hover {
+  color: #FF4C68;
+}
+
+/* Feature sections column */
+.feature-box {
+  padding: 5%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+/* Testimonials section */
+#testimonials {
+  /* Will over ride any other background color applied */
+  background-color: #EF8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonials-img {
+  width: 10%;
+  /* Add border radius to 100% to have a round image */
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Press section */
+#press {
+  /* Will over ride any other background color applied */
+  background-color: #EF8172;
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+
+.press-logo {
+  width: 15%;
+  /* margin rule applied: top left-right bottom */
+  margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+/* Footer section */
+#footer {
+  line-height: 1.5;
+}
+
+.footer-icon {
+  padding: 20px 10px;
+}
+
+/* Media Query Breakpoints */
+/* Implementing CSS media query to make website responsive in such a way that it looks goods on mobile and tablets
+not only on desktop */
+@media (max-width:1020px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
